@@ -9,6 +9,7 @@ class Agreement < ActiveRecord::Base
   validates :user_name, presence: true
   validates :text, presence: true
   validate :one_agreement_per_user_repo
+  validates_acceptance_of :tos 
 
   attr_accessible :user_name, :repo_name, :text, :agreement_fields_attributes
 

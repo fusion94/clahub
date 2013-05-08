@@ -56,7 +56,9 @@
     </ul>
   </div>
 
-
+<%= check_box("agreement", "tos") %>
+     <%= label :terms_of_service, "I agree to the Terms of Service", :class => "checkbox inline" %>
+     
   <div class='form-actions'>
     <%= form.button 'Create agreement', :class => 'btn btn-primary' %>
   </div>
